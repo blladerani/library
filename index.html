@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__text">Library</div>
+      <img src="assets/book.svg" alt="" class="header__img" />
+    </header>
+    <main class="main">
+      <div class="add-button">
+        <img src="assets/plus.svg" class="add-button__img" />
+        <div class="add-button__text">Add Book</div>
+      </div>
+      <div class="books-container" id="books"></div>
+    </main>
+    <div class="footer">
+      Made by <img src="assets/github.svg" alt="" /><a
+        target="_blank"
+        href="https://github.com/blladerani/"
+        >blladerani</a
+      >
+    </div>
+    <form action="" id="book-form" class="modal">
+      <div class="modal__text">Add Book</div>
+      <input
+        type="text"
+        name=""
+        id="book-name"
+        class="modal__block"
+        placeholder="Book Name"
+        required
+      />
+      <input
+        type="text"
+        name=""
+        id="author"
+        class="modal__block"
+        placeholder="Author"
+        required
+      />
+      <input
+        type="number"
+        name=""
+        id="page-count"
+        class="modal__block"
+        placeholder="Page Count"
+        required
+      />
+      <div class="input-field">
+        <label for="read">Read it?</label>
+        <input type="checkbox" name="" id="read" value="read" />
+      </div>
+      <button type="submit" class="modal__block">Add</button>
+    </form>
+    <div class="modal-background"></div>
+  </body>
+</html>
